@@ -1,0 +1,144 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\author{José Ramón Pérez Navarro}
+\date{Agosto 2019}
+\title{Movimiento de proyectiles}
+\begin{document}
+
+\maketitle
+
+\begin{flushleft}
+
+El movimiento de proyectil es una forma de movimiento que experimenta un objeto o partícula (un proyectil ) que se arroja cerca de la superficie de la Tierra y se mueve a lo largo de una trayectoria curva solo bajo la acción de la gravedad. El estudio de tales movimientos se llama balística , y tal trayectoria es una trayectoria balística 
+
+\vspace{0.5cm}
+
+\begin{figure}[h] 
+\centering
+    \includegraphics[width=250pt]{balistica.png}
+    \caption{}
+    \label{fig:my_label}
+\end{figure}
+
+\vspace{0.5cm}
+
+La balística es la ciencia de la mecánica que se ocupa del vuelo, el comportamiento y los efectos de los proyectiles, especialmente balas, bombas no guiadas, cohetes o similares; La ciencia o el arte de diseñar y acelerar proyectiles para lograr el rendimiento deseado.
+
+\vspace{0.5cm}
+
+\textbf{Tabla de entradas y salidas para comprobar que el ángulo de 45 grados produce una $x=max, y=0$ con una rapidez dada}
+
+\begin{figure}[h] 
+\centering
+    \includegraphics[width=250pt]{entradasysalidas.png}
+    \caption{}
+    \label{fig:my_label}
+\end{figure}
+
+\vspace{2cm}
+
+\textbf{Tiempo total de vuelo}
+
+\vspace{0.5cm}
+
+El tiempo total $t$ durante el cual el proyectil permanece en el aire se llama tiempo de vuelo. \[y=v_{0}tsin(\theta)-\dfrac{1}{2}gt^{2}\]
+
+\vspace{0.5cm}
+
+Después del vuelo, el proyectil vuelve al eje horizontal (eje x), entonces $y=0$
+
+\[0=v_{0}tsin(\theta)-\dfrac{1}{2}gt^{2}\]   \[v_{0}tsin(\theta)=\dfrac{1}{2}gt^{2}\]    \[v_{0}sin(\theta)=\dfrac{1}{2}gt^{2}\]      \[t=\dfrac{2v_{0}sin(\theta)}{g}\]     
+\vspace{0.2cm}
+
+Ejemplo: Un proyectil es lanzado por un cañón a un ángulo de 35 grados y con una rapidez inicial de 10m/s, ¿Cúal es el tiempo de vuelo?
+\vspace{0.5cm}
+\[=\dfrac{2(10m/s)sen(35)}{9.8}=1.17s\]
+
+\textbf{Altura máxima del proyectil}
+
+\vspace{0.5cm}
+
+La mayor altura que alcanzará el objeto se conoce como el pico del movimiento del objeto. El aumento de altura durará hasta $v_{y}= 0$ es decir, \[0=v_{0}sin(\theta)-gt_{h}\]
+
+Tiempo para alcanzar la altura máxima (h):
+
+\[t_{h}=\dfrac{v_{0}sin(\theta)}{g}\]
+
+Del desplazamiento vertical de la altura máxima del proyectil:
+
+\[h=v_{0}t_{h}sin(\theta)-\dfrac{1}{2}gt^{2}_{h}\]
+
+\[h=\dfrac{v_{0
+}^{2}sin^{2}(\theta)}{2g}\]
+
+\vspace{0.5cm}
+
+\begin{figure}[h] 
+\centering
+    \includegraphics[width=200pt]{alturamax.png}
+    \caption{}
+    \label{fig:my_label}
+\end{figure}
+
+\vspace{2cm}
+
+Ejemplo:Un balon de futbol es pateado con un ángulo de 45 grados y con una rapidez inicial de 15m/s, ¿Cúal la altura máxima?
+
+\[hmax=\dfrac{(15m/s)^{2}sin(45)}{2(9.81m/s^{2})}= 5.73m\]
+
+\vspace{0.5cm}
+
+
+\textbf{Distancia máxima del proyectil}
+
+\vspace{0.5cm}
+
+El alcance y la altura máxima del proyectil no depende de su masa. Por lo tanto, el alcance y la altura máxima son iguales para todos los cuerpos que se lanzan con la misma velocidad y dirección. El rango horizontal d del proyectil es la distancia horizontal que ha recorrido cuando vuelve a su altura inicial $(y=0)$
+
+\[0=v_{0}t_{d}sin(\theta)-\dfrac{1}{2}gt^{2}_{d}\]
+
+Hora de llegar al suelo:
+
+\[dmax=\dfrac{2v_{0}sin(\theta)}{g}\]
+
+\vspace{0.5cm}
+
+\begin{figure}[h] 
+\centering
+    \includegraphics[width=200pt]{distanciamax.png}
+    \caption{}
+    \label{fig:my_label}
+\end{figure}
+
+\vspace{2cm}
+
+Ejemplo: Un golfista golpea con un palo de golf a una pelota con un ángulo de 60 grados y con una rapidez inicial de 20m/s, ¿Cúal la distancia recorrida hasta que la pelota cae al suelo? 
+
+\[dmax=\dfrac{2(20m/s)sin(60)}{9.81m/s}=35.4m\]
+
+\vspace{0.5cm}
+
+\textbf{Bibliografía}
+
+https://phet.colorado.edu/en/simulation/projectile-motion
+
+\vspace{0.5cm}
+
+https://en.wikipedia.org/wiki/Projectile_motion
+
+\vspace{0.5cm}
+
+
+
+
+
+
+
+\end{flushleft}
+
+\end{document}
