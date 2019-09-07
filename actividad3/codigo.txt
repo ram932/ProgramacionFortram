@@ -1,0 +1,97 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\author{José Ramón Pérez Navarro}
+\date{06 Septiembre 2019}
+\title{Proyectiles}
+\begin{document}
+
+
+\maketitle
+
+\begin{flushleft}
+\title{ \textbf {\large{Introducción}}}\\ 
+\vspace{0.5cm}
+
+En esta actividad realizada durante la presente semana, aplicamos el concepto "do-loops" para estructurar procesos repetitivos, así como también, se leyeron entradas y salidas de datos de un archivo de texto a otro utilizando la instrucción $"open"$ para tratar de replicar el movimiento durante el lanzamiento de un proyectil, el ángulo, la posición en $(x, y)$ y el cambio de las mismas en determinado instante de tiempo.
+
+\vspace{0.5cm}
+
+\begin{figure}[h] 
+\centering
+    \includegraphics[width=400pt]{doloops.png}
+    \caption{}
+    \label{fig:my_label}
+\end{figure}
+
+\vspace{0.7cm}
+
+
+
+\textbf{Procedimiento}
+
+\vspace{0.5cm}
+
+\begin{enumerate}
+   
+\item{Se utilizo el programa "proyectil.f90" que leía la velocidad inicial u, el ángulo a y el tiempo total de vuelo t.}
+
+\item{Se elaboro una estructura do-loop, para que el programa escribiese en la pantalla la posición (x,y) del proyectil cada 0.1 segundos para un ángulo especifico.}
+
+\item{Se definió un archivo de nombre $"salida.dat"$ con la instrucción $"open"$, donde se escribieron las posiciones (x,y), para cada instante de tiempo.}
+
+\item{ Mediante Gnuplot, se gráfico el archivo "salida.dat". Desde una terminal se escribió "gnuplot" y dentro de la interfaz de Gnuplot, se ingresaron los siguientes comandos: plot "salida.dat" with lines, de esta manera se consiguió el gráfico}
+
+\item{Posteriormente se incluyo otra estructura "loop" de manera que repitiese los cálculos anteriores, pero para 6 ángulos distintos: 15, 30, 45, 60, 75 y 90 grados. Los datos de las posiciones (x,y), se escribieron también al archivo "salida.dat"}
+
+\item{Se gráfico lo obtenido en el paso anterior}
+\end{enumerate}
+
+\vspace{8cm}
+
+Con el siguiente codigo:
+
+\vspace{0.2cm}
+
+\begin{figure}[h] 
+\centering
+    \includegraphics[width=450pt]{codigoproyectil.png}
+    \caption{}
+    \label{fig:my_label}
+\end{figure}
+
+\vspace{0.5cm}
+
+Se obtuvo el siguiente gráfico:
+
+\vspace{0.2cm}
+
+\begin{figure}[h] 
+\centering
+    \includegraphics[width=400pt]{proyectiles.png}
+    \caption{}
+    \label{fig:my_label}
+\end{figure}
+
+\vspace{5cm}
+
+\textbf{Conclusión}
+
+\vspace{0.5cm}
+
+En esta actividad se aprendió lo básico de hacer "do-loops" para hacer conteos, repeticiones, bucles, etc. También se aprendió a leer las entradas y salidas de datos con el comando "open" y como obtener las gráficas de estos datos mediante la ejecución del programa de "gnuplot" desde la terminal.
+
+
+\begin{verbatim}
+
+\end{verbatim}
+
+
+
+\end{flushleft}
+
+\end{document}
