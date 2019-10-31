@@ -1,7 +1,7 @@
 program Aproximacion_taylor
 implicit none
 
- !Declaracion de variables necesarias
+ !Declaracion de variables 
  real(kind=8),external:: exp_aprox
  real(kind=8)::y,x
  integer:: n,i
